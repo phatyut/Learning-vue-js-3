@@ -1,26 +1,23 @@
 <template>
-    <div>
-      <button @click="toggleHeight">Toggle Height</button>
-      <div :style="{ width: dynamicHeight }" class="bg-red-500 h-[100px] w-[100px]"></div>
-    </div>
-  </template>
+    <button v-on:click="clickme">click</button>
+  <div class="w-[100px] h-[100px] bg-blue-600" :style="{fontSize:size}" v-show="font">Test</div>
+</template>
 <script>
-export default {
-  data() {
-    return {
-      dynamicHeight: '100px'
+export default{
+  data(){
+    return{
+      size:'60px',
+      font:false
+
     }
-  },
-  methods: {
-    toggleHeight() {
-      this.dynamicHeight = this.dynamicHeight === '100px' ? '100%' : '100px';
+  },methods:{
+    clickme(){
+      alert("what is your name");
+      this.font=true
+      
+
     }
   }
 }
+
 </script>
-<style scoped>
-div {
-  transition: width 0.5s ease;
-}
-</style>
-  
