@@ -1,13 +1,14 @@
 <template>
   <div class="p-0 m-0 box-border">
-    <div class="relative flex flex-col">
-      <div><Note/></div><br><br>
-      <div><Bind/></div><br><br>
-      <div><For/></div><br><br>
-      <div><Events/></div><br><br>
-      <div><Methods/></div><br><br>
-      <div><Test/></div><br><br>
+    <div class="relative flex flex-col space-y-5 px-1">
+      <div><Note/></div>
+      <div><Bind/></div>
+      <div><For/></div>
+      <div><Events/></div>
+      <div><Methods/></div>
+      <div><Test/></div>
     </div>
+   
     
   </div>
   </template>
@@ -21,6 +22,7 @@ import Bind from './component/Bind.vue';
 import Events from './component/Events.vue';
 import Methods from './component/Methods.vue';
 import Test from './component/Test.vue';
+
 
 export default{
   components:{Note,Bind,For,Events,Methods,Test},

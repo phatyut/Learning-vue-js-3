@@ -1,4 +1,18 @@
 <template>
-    <div class="text-yellow-400 text-center underline font-semibold text-[35px]">This is a Methods in vue js</div>
+   <div class="relative text-center uppercase font-bold text-[20px] bg-green-400 py-2" v-on:mouseover="testmethod">this is a methods</div>
+   <div>{{ testmethods }}</div>
 </template>
-<script></script>
+<script>
+export default{
+    data(){
+        return{
+            testmethods:""
+        }
+    },methods:{
+        testmethod(){
+            this.testmethods="this is a testing methods"
+        }
+    }
+}
+
+</script>
